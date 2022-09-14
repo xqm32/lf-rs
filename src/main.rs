@@ -4,7 +4,7 @@ use windows_sys::Win32::Storage::FileSystem::*;
 
 fn main() {
     let args: Vec<String> = env::args().collect();
-    let name = args.get(1).expect("Except an argument.");
+    let name = args.get(1).expect("Expect an argument.");
 
     fs::write(
         "desktop.ini",
